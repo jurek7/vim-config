@@ -30,3 +30,8 @@ vnoremap < <gv
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
+inoremap <A-Up> <C-o>:m .-2<CR>
+inoremap <A-Down> <C-o>:m .+1<CR>
+
+inoremap <C-PageUp> <C-o>:bp<CR>
+inoremap <C-PageDown> <C-o>:bn<CR>
