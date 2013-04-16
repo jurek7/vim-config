@@ -26,6 +26,7 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
 let g:NERDTreeDirArrows=0 " https://github.com/scrooloose/nerdtree/issues/108
+autocmd vimenter * NERDTree " open nerd tree at start
 
 vnoremap > >gv " do not leave visual mode while indent / reindent 
 vnoremap < <gv
