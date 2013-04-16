@@ -25,6 +25,8 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1 
 let g:miniBufExplModSelTarget = 1
 
+let g:NERDTreeDirArrows=0 " https://github.com/scrooloose/nerdtree/issues/108
+
 vnoremap > >gv " do not leave visual mode while indent / reindent 
 vnoremap < <gv
 vnoremap <Tab> >gv
