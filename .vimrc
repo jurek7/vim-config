@@ -38,3 +38,9 @@ inoremap <A-Down> <C-o>:m .+1<CR>
 
 inoremap <C-PageUp> <C-o>:bp<CR>
 inoremap <C-PageDown> <C-o>:bn<CR>
+
+set nowrap
+
+set exrc " enable per-directory .vimrc files
+set secure
+
