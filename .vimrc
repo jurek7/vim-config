@@ -38,9 +38,17 @@ inoremap <A-Down> <C-o>:m .+1<CR>
 
 inoremap <C-PageUp> <C-o>:bp<CR>
 inoremap <C-PageDown> <C-o>:bn<CR>
+nmap <C-PageUp> :bp<CR>
+nmap <C-PageDown> :bn<CR>
 
 set nowrap
 
 set exrc " enable per-directory .vimrc files
 set secure
+
+" keep swap, and temp files outside working directory
+set backupdir=/tmp
+set directory=/tmp
+
+imap <F2> <C-o>:w<CR>
 
