@@ -54,6 +54,10 @@ set backupdir=/tmp
 set directory=/tmp
 
 imap <F2> <C-o>:w<CR>
+nmap <F2> :w<CR>
+
+imap <C-f> <C-o>/<C-R><C-W>
+map <C-f> /<C-R><C-W>
 
 if &term =~ '^screen' && exists('$TMUX')
     " Mouse mode
