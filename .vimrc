@@ -20,6 +20,8 @@ set smartcase
 set background=dark
 
 imap <S-Tab> <C-o><<
+map <S-Tab> <<
+map <Tab> >>
 imap <C-d> <C-o>dd
 
 map <C-n> :NERDTreeToggle<CR>
