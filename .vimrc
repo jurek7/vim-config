@@ -61,6 +61,8 @@ nmap <F2> :w<CR>
 imap <C-f> <C-o>/<C-R><C-W>
 map <C-f> /<C-R><C-W>
 
+imap <Home> <C-o>^
+map <Home> ^
 if &term =~ '^screen' && exists('$TMUX')
     " Mouse mode
     set mouse+=a
