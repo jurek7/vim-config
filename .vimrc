@@ -46,6 +46,9 @@ inoremap <C-PageDown> <C-o>:bn<CR>
 nmap <C-PageUp> :bp<CR>
 nmap <C-PageDown> :bn<CR>
 
+nmap <C-J> J
+imap <C-J> <C-o>J
+
 set nowrap
 
 set exrc " enable per-directory .vimrc files
