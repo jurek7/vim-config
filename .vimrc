@@ -23,6 +23,7 @@ imap <S-Tab> <C-o><<
 map <S-Tab> <<
 map <Tab> >>
 imap <C-d> <C-o>dd
+nmap <C-d> dd
 
 map <C-n> :NERDTreeToggle<CR>
 let g:miniBufExplMapWindowNavVim = 1 
