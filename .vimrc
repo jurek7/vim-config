@@ -47,7 +47,7 @@ inoremap <C-PageDown> <C-o>:bn<CR>
 nmap <C-PageUp> :bp<CR>
 nmap <C-PageDown> :bn<CR>
 
-nmap <C-J> J
+nnoremap <C-J> :join<CR>
 imap <C-J> <C-o>J
 
 set nowrap
@@ -67,6 +67,10 @@ map <C-f> /<C-R><C-W>
 
 imap <Home> <C-o>^
 map <Home> ^
+
+nmap <C-g>g :silent !git gui<CR>
+imap <C-g>g <C-o>:silent !git gui<CR>
+
 if &term =~ '^screen' && exists('$TMUX')
     " Mouse mode
     set mouse+=a
