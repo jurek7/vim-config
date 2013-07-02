@@ -22,8 +22,8 @@ set background=dark
 imap <S-Tab> <C-o><<
 map <S-Tab> <<
 map <Tab> >>
-imap <C-d> <C-o>dd
-nmap <C-d> dd
+imap <C-d> <C-o>"_dd
+nmap <C-d> "_dd
 
 map <C-n> :NERDTreeToggle<CR>
 let g:miniBufExplMapWindowNavVim = 1 
