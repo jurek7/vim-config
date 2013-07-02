@@ -17,7 +17,12 @@ set expandtab " use spaces instead tabs
 set ignorecase
 set smartcase
 
-set background=dark
+colorscheme oceandeep
+" hi IndentGuidesOdd  ctermbg=black
+" hi IndentGuidesEven ctermbg=darkgrey
+"
+hi IndentGuidesOdd  ctermbg=white
+hi IndentGuidesEven ctermbg=lightgrey
 
 imap <S-Tab> <C-o><<
 map <S-Tab> <<
