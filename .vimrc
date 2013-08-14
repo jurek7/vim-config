@@ -22,7 +22,12 @@ NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'solarized/vim-colors-solarized'
+NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundleCheck
+
+
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_smart_case = 1
 
 syntax on
 filetype plugin indent on
