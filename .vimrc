@@ -19,9 +19,8 @@ NeoBundle 'tpope/vim-sensible'
 NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'mileszs/ack.vim'
-
+NeoBundle 'solarized/vim-colors-solarized'
 NeoBundleCheck
 
 syntax on
@@ -40,7 +39,12 @@ set expandtab " use spaces instead tabs
 set ignorecase
 set smartcase
 
-colorscheme oceandeep
+set t_Co=256                        " force vim to use 256 colors
+let g:solarized_termcolors=256      " use solarized 256 fallback
+let g:solarized_contrast='high'
+set background=dark
+colorscheme solarized
+
 " hi IndentGuidesOdd  ctermbg=black
 " hi IndentGuidesEven ctermbg=darkgrey
 "
