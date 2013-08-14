@@ -12,6 +12,7 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 "
 
 NeoBundle 'wincent/Command-T'
+NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tpope/vim-pathogen'
 NeoBundle 'fholgado/minibufexpl.vim'
