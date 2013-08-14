@@ -111,6 +111,8 @@ map <Home> ^
 nmap <C-g>g :silent !git gui<CR>
 imap <C-g>g <C-o>:silent !git gui<CR>
 
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
 if &term =~ '^screen' && exists('$TMUX')
 " Mouse mode
 set mouse+=a
