@@ -23,6 +23,7 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'solarized/vim-colors-solarized'
 NeoBundle 'Shougo/neocomplcache.vim'
+NeoBundle 'tpope/vim-haml'
 NeoBundleCheck
 
 
