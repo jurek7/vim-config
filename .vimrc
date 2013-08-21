@@ -41,7 +41,7 @@ set hidden " allow leave unsaved buffer
 set number " lines numbers 
 set incsearch " search while typing
 set hlsearch
-set noai " auto indent
+set ai " auto indent
 set ts=2
 set shiftwidth=2
 set expandtab " use spaces instead tabs
