@@ -21,7 +21,7 @@ NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'mileszs/ack.vim'
-NeoBundle 'solarized/vim-colors-solarized'
+NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'tpope/vim-haml'
 NeoBundleCheck
@@ -39,7 +39,7 @@ set hidden " allow leave unsaved buffer
 set number " lines numbers 
 set incsearch " search while typing
 set hlsearch
-set ai " auto indent
+set noai " auto indent
 set ts=2
 set shiftwidth=2
 set expandtab " use spaces instead tabs
@@ -88,7 +88,7 @@ nmap <C-PageDown> :bn<CR>
 
 imap <C-J> <C-o>J
 
-nnoremap <leader>q :bp<cr>:bd #<CR>
+nnoremap <leader>q :MBEbd<CR>
 
 " C-a is a word whitespace separated
 nmap <C-f> /<C-R><C-a> 
