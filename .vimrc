@@ -14,7 +14,7 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundle 'wincent/Command-T'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'tpope/vim-pathogen'
+NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'fholgado/minibufexpl.vim'
 NeoBundle 'tpope/vim-sensible'
 NeoBundle 'Chiel92/vim-autoformat'
@@ -81,10 +81,10 @@ vnoremap <S-Tab> <gv
 inoremap <A-Up> <C-o>:m .-2<CR>
 inoremap <A-Down> <C-o>:m .+1<CR>
 
-inoremap <C-PageUp> <C-o>:bp<CR>
-inoremap <C-PageDown> <C-o>:bn<CR>
-nmap <C-PageUp> :bp<CR>
-nmap <C-PageDown> :bn<CR>
+inoremap <C-PageUp> <C-o>:MBEbp<CR>
+inoremap <C-PageDown> <C-o>:MBEbn<CR>
+nmap <C-PageUp> :MBEbp<CR>
+nmap <C-PageDown> :MBEbn<CR>
 
 imap <C-J> <C-o>J
 
