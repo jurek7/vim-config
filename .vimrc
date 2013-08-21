@@ -47,6 +47,7 @@ set shiftwidth=2
 set expandtab " use spaces instead tabs
 set ignorecase
 set smartcase
+set backspace=indent,eol,start " fix for backspace key on my laptop
 
 set t_Co=256                        " force vim to use 256 colors
 let g:solarized_termcolors=256      " use solarized 256 fallback
