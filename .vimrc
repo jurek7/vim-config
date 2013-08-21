@@ -21,8 +21,11 @@ NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'mileszs/ack.vim'
-NeoBundle 'solarized/vim-colors-solarized'
+NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Shougo/neocomplcache.vim'
+NeoBundle 'tpope/vim-haml'
+NeoBundle 'msanders/snipmate.vim'
+NeoBundle 'scrooloose/snipmate-snippets'
 NeoBundleCheck
 
 
