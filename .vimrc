@@ -48,6 +48,7 @@ set expandtab " use spaces instead tabs
 set ignorecase
 set smartcase
 set backspace=indent,eol,start " fix for backspace key on my laptop
+set scrolloff=999 " always keep cursor in center
 
 set t_Co=256                        " force vim to use 256 colors
 let g:solarized_termcolors=256      " use solarized 256 fallback
@@ -74,7 +75,7 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
 let g:NERDTreeDirArrows=0 " https://github.com/scrooloose/nerdtree/issues/108
-autocmd vimenter * NERDTree " open nerd tree at start
+" autocmd vimenter * NERDTree " open nerd tree at start
 
 vnoremap > >gv " do not leave visual mode while indent / reindent 
 vnoremap < <gv
