@@ -24,10 +24,9 @@ NeoBundle 'mileszs/ack.vim'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'tpope/vim-haml'
-NeoBundle 'msanders/snipmate.vim'
+" NeoBundle 'msanders/snipmate.vim'
 NeoBundle 'scrooloose/snipmate-snippets'
 NeoBundleCheck
-
 
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_smart_case = 1
@@ -48,7 +47,7 @@ set expandtab " use spaces instead tabs
 set ignorecase
 set smartcase
 set backspace=indent,eol,start " fix for backspace key on my laptop
-set scrolloff=999 " always keep cursor in center
+set scrolloff=15 " always keep cursor in center
 
 set t_Co=256                        " force vim to use 256 colors
 let g:solarized_termcolors=256      " use solarized 256 fallback
