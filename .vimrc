@@ -147,3 +147,5 @@ execute "set <F11>=\e[23;*~"
 execute "set <F12>=\e[24;*~"
 endif
 
+au BufRead,BufNewFile *.coffee.erb setfiletype coffee
+
