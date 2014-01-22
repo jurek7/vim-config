@@ -26,6 +26,7 @@ NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'tpope/vim-haml'
 " NeoBundle 'msanders/snipmate.vim'
 NeoBundle 'scrooloose/snipmate-snippets'
+NeoBundle 'scrooloose/syntastic'
 NeoBundleCheck
 
 let g:neocomplcache_enable_at_startup = 1
