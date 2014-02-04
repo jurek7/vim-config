@@ -24,9 +24,13 @@ NeoBundle 'mileszs/ack.vim'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'tpope/vim-haml'
+NeoBundle 'kien/ctrlp.vim'
 " NeoBundle 'msanders/snipmate.vim'
 NeoBundle 'scrooloose/snipmate-snippets'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'heartsentwined/vim-emblem'
+NeoBundle 'xolox/vim-easytags'
+NeoBundle 'xolox/vim-misc'
 NeoBundleCheck
 
 let g:neocomplcache_enable_at_startup = 1
@@ -118,6 +122,8 @@ imap <C-g>g <C-o>:silent !git gui<CR>
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
+map! <C-P><C-o>:set paste!<cr>
+
 if &term =~ '^screen' && exists('$TMUX')
 " Mouse mode
 set mouse+=a
@@ -149,4 +155,8 @@ execute "set <F12>=\e[24;*~"
 endif
 
 au BufRead,BufNewFile *.coffee.erb set filetype=coffee
+
+" commandP 
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
