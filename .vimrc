@@ -11,7 +11,6 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 "  NeoBundleFetch 'Shougo/neobundle.vim'
 "
 
-NeoBundle 'wincent/Command-T'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs'
