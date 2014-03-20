@@ -16,6 +16,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'fholgado/minibufexpl.vim'
 NeoBundle 'tpope/vim-sensible'
+NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'kchmck/vim-coffee-script'
@@ -118,6 +119,8 @@ map <Home> ^
 
 nmap <C-g>g :silent !git gui<CR>
 imap <C-g>g <C-o>:silent !git gui<CR>
+nmap <C-g>b :Gblame<CR>
+imap <C-g>g <C-o>:Gblame<CR>
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
@@ -156,6 +159,7 @@ endif
 au BufRead,BufNewFile *.coffee.erb set filetype=coffee
 
 " commandP 
+imap <C-p> <C-o>:CtrlP<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
