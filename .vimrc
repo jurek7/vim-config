@@ -163,3 +163,18 @@ imap <C-p> <C-o>:CtrlP<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+if executable('coffeetags')
+  let g:tagbar_type_coffee = {
+        \ 'ctagsbin' : 'coffeetags',
+        \ 'ctagsargs' : '',
+        \ 'kinds' : [
+        \ 'f:functions',
+        \ 'o:object',
+        \ ],
+        \ 'sro' : ".",
+        \ 'kind2scope' : {
+        \ 'f' : 'object',
+        \ 'o' : 'object',
+        \ }
+        \ }
+endif
