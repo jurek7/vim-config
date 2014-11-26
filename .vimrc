@@ -29,7 +29,7 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'scrooloose/snipmate-snippets'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'heartsentwined/vim-emblem'
-NeoBundle 'xolox/vim-easytags'
+"NeoBundle 'xolox/vim-easytags'
 NeoBundle 'xolox/vim-misc'
 NeoBundleCheck
 
@@ -163,18 +163,18 @@ imap <C-p> <C-o>:CtrlP<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-if executable('coffeetags')
-  let g:tagbar_type_coffee = {
-        \ 'ctagsbin' : 'coffeetags',
-        \ 'ctagsargs' : '',
-        \ 'kinds' : [
-        \ 'f:functions',
-        \ 'o:object',
-        \ ],
-        \ 'sro' : ".",
-        \ 'kind2scope' : {
-        \ 'f' : 'object',
-        \ 'o' : 'object',
-        \ }
-        \ }
-endif
+"if executable('coffeetags')
+  "let g:tagbar_type_coffee = {
+        "\ 'ctagsbin' : 'coffeetags',
+        "\ 'ctagsargs' : '',
+        "\ 'kinds' : [
+        "\ 'f:functions',
+        "\ 'o:object',
+        "\ ],
+        "\ 'sro' : ".",
+        "\ 'kind2scope' : {
+        "\ 'f' : 'object',
+        "\ 'o' : 'object',
+        "\ }
+        "\ }
+"endif
