@@ -13,24 +13,37 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
+
 NeoBundle 'jistr/vim-nerdtree-tabs'
+
 NeoBundle 'fholgado/minibufexpl.vim'
-NeoBundle 'tpope/vim-sensible'
+
+"NeoBundle 'tpope/vim-sensible'
+
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'Chiel92/vim-autoformat'
+
+"NeoBundle 'Chiel92/vim-autoformat'
+
 NeoBundle 'Lokaltog/vim-powerline'
-NeoBundle 'kchmck/vim-coffee-script'
+
+NeoBundle 'kchmck/vim-coffee-script' " enable syntax highlighting
+
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Shougo/neocomplcache.vim'
-NeoBundle 'tpope/vim-haml'
+
+"NeoBundle 'tpope/vim-haml'
+
 NeoBundle 'kien/ctrlp.vim'
 " NeoBundle 'msanders/snipmate.vim'
-NeoBundle 'scrooloose/snipmate-snippets'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'heartsentwined/vim-emblem'
+"NeoBundle 'scrooloose/snipmate-snippets'
+
+"NeoBundle 'scrooloose/syntastic'
+
+"NeoBundle 'heartsentwined/vim-emblem'
 "NeoBundle 'xolox/vim-easytags'
-NeoBundle 'xolox/vim-misc'
+"NeoBundle 'xolox/vim-misc'
+
 NeoBundleCheck
 
 let g:neocomplcache_enable_at_startup = 1
@@ -45,10 +58,18 @@ set hidden " allow leave unsaved buffer
 set number " lines numbers 
 set incsearch " search while typing
 set hlsearch
-set ai " auto indent
-set ts=2
-set shiftwidth=2
-set expandtab " use spaces instead tabs
+
+
+"set ai " auto indent
+"set ts=2
+"set shiftwidth=2
+"set expandtab! " use spaces instead tabs
+"
+
+"set noexpandtab
+"set tabstop=4
+"set shiftwidth=4
+
 set ignorecase
 set smartcase
 set backspace=indent,eol,start " fix for backspace key on my laptop
@@ -79,6 +100,7 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
 let g:NERDTreeDirArrows=0 " https://github.com/scrooloose/nerdtree/issues/108
+let NERDTreeIgnore = [ '\.pyc$' ]
 " autocmd vimenter * NERDTree " open nerd tree at start
 
 vnoremap > >gv " do not leave visual mode while indent / reindent 
@@ -157,24 +179,17 @@ execute "set <F12>=\e[24;*~"
 endif
 
 au BufRead,BufNewFile *.coffee.erb set filetype=coffee
+au BufRead,BufNewFile *.haml set noexpandtab " force no expand tab 
 
 " commandP 
 imap <C-p> <C-o>:CtrlP<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-"if executable('coffeetags')
-  "let g:tagbar_type_coffee = {
-        "\ 'ctagsbin' : 'coffeetags',
-        "\ 'ctagsargs' : '',
-        "\ 'kinds' : [
-        "\ 'f:functions',
-        "\ 'o:object',
-        "\ ],
-        "\ 'sro' : ".",
-        "\ 'kind2scope' : {
-        "\ 'f' : 'object',
-        "\ 'o' : 'object',
-        "\ }
-        "\ }
-"endif
+set tabstop=2
+set shiftwidth=2
+set softtabstop=0
+set noexpandtab
+set copyindent
+set smartindent
+
