@@ -156,6 +156,9 @@ imap <C-p> <C-o>:CtrlP<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+" close vim if there is only one window with nerdtree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
 set tabstop=2
 set shiftwidth=2
 set softtabstop=0
