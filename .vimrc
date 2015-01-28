@@ -27,22 +27,11 @@ set ttymouse=xterm
 set hidden " allow leave unsaved buffer
 set number " lines numbers 
 set incsearch " search while typing
-set hlsearch
-
-
-"set ai " auto indent
-"set ts=2
-"set shiftwidth=2
-"set expandtab! " use spaces instead tabs
-"
-
-"set noexpandtab
-"set tabstop=4
-"set shiftwidth=4
+set hlsearch " highlight search
 
 set ignorecase
-set smartcase
-set backspace=indent,eol,start " fix for backspace key on my laptop
+set smartcase " use with ignore case set to 'on'
+set backspace=indent,eol,start " fix for backspace key
 set scrolloff=15 " always keep cursor in center
 
 set t_Co=256                        " force vim to use 256 colors
@@ -112,9 +101,7 @@ map <Home> ^
 nmap <C-g>g :silent !git gui<CR>
 imap <C-g>g <C-o>:silent !git gui<CR>
 nmap <C-g>b :Gblame<CR>
-imap <C-g>g <C-o>:Gblame<CR>
-
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+imap <C-g>b <C-o>:Gblame<CR>
 
 map! <C-P><C-o>:set paste!<cr>
 
