@@ -13,9 +13,6 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
-
-NeoBundle 'jistr/vim-nerdtree-tabs'
-
 NeoBundle 'fholgado/minibufexpl.vim'
 
 "NeoBundle 'tpope/vim-sensible'
