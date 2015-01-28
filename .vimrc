@@ -7,44 +7,17 @@ endif
 
 call neobundle#rc(expand('~/.vim/bundle/'))
 
-" Let NeoBundle manage NeoBundle
-"  NeoBundleFetch 'Shougo/neobundle.vim'
-"
-
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'fholgado/minibufexpl.vim'
-
-"NeoBundle 'tpope/vim-sensible'
-
 NeoBundle 'tpope/vim-fugitive'
-
-"NeoBundle 'Chiel92/vim-autoformat'
-
 NeoBundle 'Lokaltog/vim-powerline'
-
 NeoBundle 'kchmck/vim-coffee-script' " enable syntax highlighting
-
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'Shougo/neocomplcache.vim'
-
-"NeoBundle 'tpope/vim-haml'
-
 NeoBundle 'kien/ctrlp.vim'
-" NeoBundle 'msanders/snipmate.vim'
-"NeoBundle 'scrooloose/snipmate-snippets'
-
-"NeoBundle 'scrooloose/syntastic'
-
-"NeoBundle 'heartsentwined/vim-emblem'
-"NeoBundle 'xolox/vim-easytags'
-"NeoBundle 'xolox/vim-misc'
 
 NeoBundleCheck
-
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_smart_case = 1
 
 syntax on
 filetype plugin indent on
